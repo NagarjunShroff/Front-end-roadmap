@@ -21,12 +21,12 @@ Before deep diving into React Suspense lets know about Data fetching patterns
 - Data fetching patterns
  a. Fetch on Render:
     This is most used way of data fetching.
-    ![Fetch on render](ReactSuspense/fetchOnRender.png)
+    ![Fetch on render](./ReactSuspense/fetchOnRender.png)
 
  Problem: Consider parent and child components makes network calls on mounting phase, if the network call in the parent component fails during the component mount, it never allows the child component to render( Network waterfall ).
 
  b. Fetch then Render:
-    ![Fetch on render](ReactSuspense/fetchThenRender.png)
+    ![Fetch then render](./ReactSuspense/fetchThenRender.png)
     Here we solve Network waterfall issue.
 
     Problem: Consider if the Parent component makes multiple network calls, children components render will wait till all the network calls to be resolved.
@@ -60,4 +60,4 @@ Before deep diving into React Suspense lets know about Data fetching patterns
      We can use 3rd party library "react-error-boundary" in the project to do the same.
 
      Suspense will always reach out to the nearer error boundary when the component's network fails or throws error.
-![React Suspense with Error boundary](ReactSuspense/reactSuspenseWithErrorboundary.png)
+![React Suspense with Error boundary](./ReactSuspense/reactSuspenseWithErrorboundary.png)
