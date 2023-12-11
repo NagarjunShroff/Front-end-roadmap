@@ -61,3 +61,5 @@ Before deep diving into React Suspense lets know about Data fetching patterns
 
      Suspense will always reach out to the nearer error boundary when the component's network fails or throws error.
 ![React Suspense with Error boundary](./ReactSuspense/reactSuspenseWithErrorboundary.png)
+
+   project: https://github.com/NagarjunShroff/react-suspense
