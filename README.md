@@ -104,3 +104,104 @@ Before deep diving into React Suspense lets know about Data fetching patterns
 
       7. Streaming:
             Server components allows you to split the rendering work into chunks and stream it to client as in when it is ready. This allows the user to see certain parts of the UI without waiting for the entire UI to be ready on the server.
+
+# 4. JavaScript Synchronous and Asyncchronous programing
+
+   - JavaScript: An Single threaded, Non-blocking, Asynchronous, Concurrent programming language with lots of flexibility.
+
+   - Synchronous: Everything what happens inside the Function Execution Stack(Call Stack) is sequential. This is the synchronous part of JavaScript.
+
+   JavaScript's single thread make sure taking care of everything inside Function Execution Stack before it looks into anything else.
+
+   Example 
+   ```
+   function f1() {
+      console.log("f1");
+   };
+
+   function f2(){
+      console.log("f2");
+   };
+
+   function f3(){
+      console.log("f3");
+   }
+
+   f1();
+   f2();
+   f3();
+
+   Output:
+   f1
+   f2
+   f3
+   ```
+![Call Stack](SyncAndAsync/syncCallStack.png)
+
+   - Asynchronous: Not occuring at the same point.
+
+   - Usecases for Asychronous programing
+      1. Fetching data from the server.
+      2. Want to execute something with a delay.
+      3. Want to execute something after an event.
+   
+   - Majority of the time asychronous programing comes into picture
+      1. Browser APIs or Web APIs
+      2. Promises - An unique javascript object that allows to do asynchronous operations.
+
+   Example 1:
+   ```
+   function f1(){
+      console.log("f1");
+   };
+
+   function f2(){
+      console.log("f2");
+   };
+
+   function main(){
+      console.log("main");
+
+      setTimeout(f1, 0);
+
+      f2();
+   }
+
+   main();
+
+   Output:
+   main
+   f2
+   f1
+   ```
+![Asynchronous with setTimeout](SyncAndAsync/asyncWithSetTimeout.png)
+   
+   Example 2:
+   ```
+   function f1(){
+      console.log("f1");
+   };
+
+   function f2(){
+      console.log("f2");
+   };
+
+   function main(){
+      console.log("main");
+
+      setTimeout(f1, 0);
+
+      new Promise(function(resolve, reject){
+         console.log("I'm a promise");
+      }).then(result => result);
+
+      f2();
+   }
+
+   Output:
+   main
+   f2
+   I'm a promise
+   f1
+   ```
+![Asynchronous with setTimeout and Promise](SyncAndAsync/asyncWithSetTimeoutAndPromise.png)
