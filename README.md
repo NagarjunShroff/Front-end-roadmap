@@ -174,6 +174,11 @@ Before deep diving into React Suspense lets know about Data fetching patterns
    f2
    f1
    ```
+   1. Main() gets invoked and "main" will get printed.
+   2. SetTimeout is the Browser API, f1() call back will gets into call queue.
+   3. f2() gets in the stack and gets executes - which prints "f2".
+   4. Nothing in the execution stack, event loop indentifies and moves f1() callback to the execution stack and that gets executed.
+
 ![Asynchronous with setTimeout](SyncAndAsync/asyncWithSetTimeout.png)
    
    Example 2:
@@ -204,4 +209,13 @@ Before deep diving into React Suspense lets know about Data fetching patterns
    I'm a promise
    f1
    ```
+   1. main() gets invoked and prints "main".
+   2. SetTimeout is an browser API, f1() call back will gets added in the call queue.
+   3. Promise executor function will gets added into Job queue.
+   4. f2() will gets into execution statck and gets executed.
+   5. Nothing in the execution stack, Job queue gets higher precedence over call queue, Anonymous function(promise executor function) will be pushed to execution queue and gets executed.
+   6. Execution stack is empty and f1() will be pushed to execution stack and gets executed.
+
+Note: Job queue is always have higher precedence over Call queue.
+
 ![Asynchronous with setTimeout and Promise](SyncAndAsync/asyncWithSetTimeoutAndPromise.png)
