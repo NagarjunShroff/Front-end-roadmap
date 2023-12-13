@@ -105,7 +105,7 @@ Before deep diving into React Suspense lets know about Data fetching patterns
       7. Streaming:
             Server components allows you to split the rendering work into chunks and stream it to client as in when it is ready. This allows the user to see certain parts of the UI without waiting for the entire UI to be ready on the server.
 
-# 4. JavaScript Synchronous and Asyncchronous programing
+# 4. JavaScript Synchronous and Asynchronous programing
 
    - JavaScript: An Single threaded, Non-blocking, Asynchronous, Concurrent programming language with lots of flexibility.
 
