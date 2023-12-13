@@ -220,7 +220,7 @@ Note: Job queue is always have higher precedence over Call queue.
 
 ![Asynchronous with setTimeout and Promise](SyncAndAsync/asyncWithSetTimeoutAndPromise.png)
 
-# 4. Promises - How to Resolve or Reject a Promise.
+# 5. Promises - How to Resolve or Reject a Promise.
 
    Promise: An Object represents an eventual completion or failure of an asynchronous operations and its resulting value.
 
@@ -273,4 +273,34 @@ Note: Job queue is always have higher precedence over Call queue.
    Output:
    if promise gets resolved the output will be: Cooking with Water.
    if promise gets rejected the output will be: OMG Jack fell down.
+   ```
+
+# 6. Callback
+
+   Callback is a function which is to be executed after another function has finished execution.
+
+   example:
+![Robin pizza](Callback/robinCallback.png)
+
+   ```
+   // Robin's end on clicking order pizza button
+   orderPizza("veg", "cheese barbeque", (msg) => console.log(msg));
+
+   // PizzaHub's end
+
+   const orderPizza = (type, name, callback) => {
+      console.log(`Pizza ${type} ${name} is ordered!`);
+
+      setTimeout(() => {
+         const msg = `Pizza ${type} ${name} is ready!!!`;
+         callback(msg);
+      }, 3000);
+   }
+   
+   Output:
+   Pizza veg cheese barbeque is ordered!
+
+   (after 3 secs)
+   Pizza veg cheese barbeque is ready!!!
+
    ```
