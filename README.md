@@ -4,7 +4,7 @@ This repository is for learning the Front-end concepts.
 
 1. [Concurrent React](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/ConcurrentReact/README.md)
 2. [React Suspense](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/ReactSuspense/README.md)
-3. [React Server Components](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/ReactServerCompoenents/README.md)
+3. [React Server Components](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/ReactServerComponents/README.md)
 4. [JavaScript Synchronous and Asynchronous programing](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/SyncAndAsync/README.md)
 5. [Promise - How to Resolve or Reject a Promise](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/Promise/README.md)
 6. [Callback](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/Callback/README.md)
