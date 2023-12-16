@@ -529,3 +529,5 @@ Source: https://github.com/atapas/promise-interview-ready/tree/main/src/02-promi
    app();
 
    ```
+# 10. Promise APIs:
+ [Promise APIs](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/PromiseAPIs/README.md)
