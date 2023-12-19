@@ -13,4 +13,4 @@ This repository is for learning the Front-end concepts.
 8. [Async and Await](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/AsyncAndAwait/README.md)
 10. [Promise APIs](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/PromiseAPIs/README.md)
 11. [React Hooks](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/ReactHooks/README.md)
-
+12. [Programming Paradigms](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/ProgrammingParadigms/README.md)
