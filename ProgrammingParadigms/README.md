@@ -88,7 +88,7 @@ cookAndLetChill();
     ```
 
 5. OOP Programming:
-    Here it seperates the concerns and responsibilities
+    Here it seperates the concerns and responsibilities into entities.
 
     Example:
     ```
