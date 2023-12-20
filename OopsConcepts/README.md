@@ -220,3 +220,72 @@
     console.log(`Perimeter of the rectangle: ${rectangle.perimeter()}`);
 
     ```
+- Object Composition:
+
+    Its an alternate to inheritence.
+
+    In inheritence child classes will inherit all the properties and Methods from its parent classes. Sometime child class might not need all the properties and methods from the parent. With Object Composition, Child can get what they want from parent.
+
+    ```
+    class Characters{
+        constructor(speed){
+            this.speed = speed;
+        }
+
+        move = () => console.log("zzzzzzziiiiiiiiiiiiinnnnnnnnnnnggggggggg");
+    }
+
+    class Enemy extends Characters{
+        constructor(name, phrase, power, speed){
+            super(speed);
+            this.name = name;
+            this.phrase = phrase;
+            this.power = power;
+        }
+
+        sayPhrase = () => console.log(this.phrase);
+        attack = () => console.log(`I'm attacking with the power ${this.power}`)
+    }
+
+    class Alien extends Enemy{
+        constructor(name, phrase, power, speed){
+            super(name, phrase, power, speed);
+            this.species = "alien";
+        }
+
+        fly = () => comsole.log(`I can fly with the speed ${this.speed}`);
+    }
+
+    class Bug extends Enemy{
+        constructor(name, phrase, power, speed){
+            super(name, phrase, power, speed);
+            this.species = "bug";
+        }
+
+        hide = () => console.log("You cant catch me now!");
+    }
+
+    class Robot extends Enemy{
+        constructor(name, phrase, power, speed){
+            super(name, phrase, power, speed);
+            this.species = "robot";
+        }
+
+        transform = () => console.log("Optimus Prime!");
+    }
+
+    const alien = new Alien("Ali", "I'm Ali alien", 10, 20);
+    const bug = new Bug("Buggy", "Your debugger doesnt work with me!", 20, 50);
+    const robot =  new Robot("Chitti", "Vasi meh meh", 50, 120);
+
+    const enablingFlyTobug = (obj) => {
+        obj.fly = () => console.log(`Now ${obj.name} can also fly!!!`);
+    };
+
+    enablingFlyTobug(bug);
+    bug.fly();
+
+    Output:
+    Now Buggy can also fly!!!
+
+    ```
