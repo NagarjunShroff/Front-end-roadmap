@@ -15,3 +15,4 @@ This repository is for learning the Front-end concepts.
 11. [React Hooks](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/ReactHooks/README.md)
 12. [Programming Paradigms](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/ProgrammingParadigms/README.md)
 13. [JavaScript OOPS concepts](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/OopsConcepts/README.md)
+14. [Debounce Vs Throttle](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/DebounceVsThrottle/README.md)
