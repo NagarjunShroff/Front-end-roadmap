@@ -16,3 +16,4 @@ This repository is for learning the Front-end concepts.
 12. [Programming Paradigms](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/ProgrammingParadigms/README.md)
 13. [JavaScript OOPS concepts](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/OopsConcepts/README.md)
 14. [Debounce Vs Throttle](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/DebounceVsThrottle/README.md)
+15. [PWA](https://github.com/NagarjunShroff/Front-end-roadmap/blob/master/PWA/README.md)
