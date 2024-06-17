@@ -3,7 +3,7 @@
 1. State Hooks:
     - useState: lets you to declare a state variable and you can update it directly.
     
-    - useReducer: lets you to declare a state variable with the update login inside a reducer function.
+    - useReducer: lets you to declare a state variable with the update logic inside a reducer function.
 
 2. Context Hook:
     - useContext: lets you to pass the information from a component to its child components(at any level) without using props.
